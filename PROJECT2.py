@@ -116,7 +116,7 @@ class Admin(Seat, Timeslot, Screen):
             with open("timeslots.pickle", "rb") as f:
                 self.times = pickle.load(f)
         except FileNotFoundError:
-            pass  # No data files found, initialize empty structures
+            pass
 
 
 class User(Seat, Movie):
